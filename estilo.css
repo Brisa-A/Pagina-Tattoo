@@ -1,0 +1,254 @@
+body {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    background: #050505;
+    color: rgb(0, 0, 0);
+}
+
+.hero {
+    background-image: url("loggmejorado.png");
+    width: 1400px;
+    height:600px;
+    background-size: cover;
+    background-position: center 35%; /* ajustá esto si querés */
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+/* MENU */
+nav{
+    background-color: black;
+    padding: 15px;
+    text-align: center;
+}
+
+/* BOTONES DEL MENU */
+nav a{
+    color: red;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 18px;
+    border: 1px solid red;
+    padding: 8px 20px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+/* EFECTO CUANDO PASAS EL MOUSE */
+nav a:hover{
+    background-color: red;
+    color: black;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  centrado exacto 
+    text-align: center;
+}
+
+.hero img {
+    width: 10%;
+    height: 20%;
+    object-fit: cover;
+    animation: zoom 10s ease-in-out infinite alternate;
+}
+
+/* animación suave */
+@keyframes zoom {
+    from { transform: scale(1); }
+    to { transform: scale(1.1); }
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    letter-spacing: 4px;
+    margin: 0;
+}
+
+.hero-content p {
+    color: #aaa;
+    margin-bottom: 20px;
+} 
+
+/* BOTON 
+.btn {
+    border: 2px solid white;
+    padding: 12px 25px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    color: black;
+}*/
+
+/* GALERIA */
+.galeria {
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.galeria h2 {
+    margin-bottom: 30px;
+}
+
+/* INFO */
+.info { 
+    h2{
+        backgroubd:lab(24.28% 43.57 31.64);
+    }
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 60px 20px;
+    text-align: center;
+    background: oklch(42.398% 0.17211 28.981 / 0.527);
+}
+
+.consultas{
+    padding: 60px 20px;
+    text-align: center;
+}*/
+
+.trabajos{
+    padding:30px 20px;
+    text-align: center;
+}
+ul {
+  list-style-position: inside; /* o outside según prefieras */
+  padding-left: 0;
+  margin: 0 auto;
+  display: inline-block; /* mantiene la lista centrada */
+  text-align: left; /* alinea correctamente los textos */
+}
+/*ul {
+    padding-left: 30px;
+    list-style-position: inside;
+}*/
+li {
+    margin-bottom: 5px; /* espacio entre líneas */
+}
+
+
+input, textarea {
+  display: block;
+  margin: 2px auto;
+}
+/*EFECTO GALERIA
+.grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.grid img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+} */
+/* */.grid div {
+    overflow: hidden;
+}
+.grid img {
+    width: 35%;
+    height: 270px;
+    object-fit: cover;
+     transform: scale(0.70); /* 👈 ESTO LAS DEVUELVE AL TAMAÑO NORMAL */
+    transition: transform 0.4s ease;
+}
+.grid div {
+    overflow: hidden;
+}
+.grid img:hover {
+    transform: scale(1.0);
+    box-shadow: 0 0 20px hsl(0, 81%, 19%);
+}
+
+label{
+color:#b91111de;
+
+}
+
+p{
+    /*color:hwb(0 5% 46%);*/
+    color:#b91111de;
+}
+
+.consultas{ 
+    h3{
+        /*color:hwb(0 5% 45%); */
+        color:#b91111de;
+    }
+    background-color: hsl(0, 25%, 2%);
+}
+
+
+
+.btn-enviar {
+    background: oklab(34.823% 0.11883 0.06309);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* efecto al pasar el mouse */
+.btn-enviar:hover {
+    background: hwb(0 0% 100%);
+    color: lch(38.78% 79.43 38.63);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px #81020279;
+}
+
+/* efecto al hacer click */
+.btn-enviar:active {
+    transform: scale(0.95);
+}
+
+.contenedor {
+    display: flex; /* pone texto y form uno al lado del otro */
+    justify-content: center; /* centra horizontal */
+    align-items: center; /* centra vertical */
+    gap: 60px; /* espacio entre texto y form */
+    max-width: 1200px; /* ancho máximo */
+    margin: auto; /* centra en la página */
+}
+
+/* BLOQUE DE TEXTO 
+.texto {
+  /*  max-width: 400px;  limita el ancho del texto */
+}*/
+
+/* TÍTULO GRANDE 
+.texto h2 {
+    font-size: 2.5rem; /* tamaño grande */
+   /*  margin-bottom: 20px; espacio abajo*/ 
+}*/
+
+/* PÁRRAFO 
+.texto p {
+    color: hsl(0, 90%, 38%); /* gris claro
+    margin-bottom: 20px; */
+}*/
+
+/* TEXTO FINAL 
+.texto h3 {
+    margin-top: 20px;
+}*/
